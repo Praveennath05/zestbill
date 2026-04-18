@@ -83,7 +83,7 @@ export default function Login({ onLogin }) {
     alignItems: "center",
     justifyContent: "center",
     padding: "24px",
-    backgroundImage: "url('/98.jpeg')",
+    backgroundImage: "url('/Front_end/public/Food Photography Remote & Worldwide — Uzo Onyejiaka _ Food & Product Photographer _ Barcelona, Spain.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
