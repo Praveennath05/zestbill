@@ -2,11 +2,11 @@ import axios from "axios";
 // AUTH API (NO JWT REQUIRED)
   
 const authApi = axios.create({
-  baseURL: "http://localhost:5000/api/auth",
+  baseURL: "https://zestbill.onrender.com/api/auth",
 });
 
 const appApi = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://zestbill.onrender.com/api",
 });
 
 // JWT INTERCEPTOR
