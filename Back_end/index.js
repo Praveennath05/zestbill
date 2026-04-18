@@ -11,8 +11,9 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
-  'https://ledger-go.vercel.app',
-  'https://small-scale-food-hotel-app.vercel.app',
+  'https://zestbill-delta.vercel.app/',
+
+  ,
   // Add any Vercel preview URLs here if needed
 ];
 
