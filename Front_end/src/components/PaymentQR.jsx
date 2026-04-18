@@ -12,20 +12,9 @@ export default function PaymentQR({ amount, orderId, onClose, userImage }) {
     name
   )}&am=${amount}&cu=INR&tn=Order%20${orderId}`;
 
-  const handleConfirm = () => {
-    setLoading(false);
-    setShowConfirm(false);
-    alert("Payment confirmed!");
-    onClose();
-  };
 
-  const handleCancel = () => {
-    setLoading(false);
-    setShowConfirm(false);
-    alert("Payment cancelled!");
-    onClose();
-  };
 
+ 
   // Simulate loading when modal opens
   useEffect(() => {
     setLoading(true);
@@ -127,37 +116,6 @@ export default function PaymentQR({ amount, orderId, onClose, userImage }) {
             />
 
             <p>Scan with GPay / PhonePe / Paytm</p>
-
-            <div style={{ display: "flex", gap: "15px", marginTop: "10px" }}>
-              <button
-                onClick={handleConfirm}
-                style={{
-                  padding: "8px 16px",
-                  background: "#4ade80",
-                  border: "none",
-                  borderRadius: "8px",
-                  cursor: "pointer",
-                  color: "#000",
-                  fontWeight: "bold",
-                }}
-              >
-                OK
-              </button>
-              <button
-                onClick={handleCancel}
-                style={{
-                  padding: "8px 16px",
-                  background: "#f87171",
-                  border: "none",
-                  borderRadius: "8px",
-                  cursor: "pointer",
-                  color: "#000",
-                  fontWeight: "bold",
-                }}
-              >
-                Cancel
-              </button>
-            </div>
           </div>
         )}
       </div>
